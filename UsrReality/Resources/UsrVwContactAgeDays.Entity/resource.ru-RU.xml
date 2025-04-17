@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="VwContactAgeDays" />
+			<Item Name="Columns.UsrBirthDate.Caption" Value="BirthDate" />
+			<Item Name="Columns.UsrId.Caption" Value="Id" />
+			<Item Name="Columns.UsrName.Caption" Value="Name" />
+		</Items>
+	</Group>
+</Resources>

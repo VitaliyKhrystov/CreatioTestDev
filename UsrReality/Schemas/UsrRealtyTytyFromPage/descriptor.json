@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "0c81c0d5-7a6b-43cd-96f3-2f4f4eb5ded9",
+    "Name": "UsrRealtyTytyFromPage",
+    "ModifiedOnUtc": "\/Date(1744881244000)\/",
+    "Parent": {
+      "UId": "ecdcc8ff-272c-4957-9381-7d74ce17e140",
+      "Name": "BaseMiniPageTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Realty Type from page"
+  }
+}
