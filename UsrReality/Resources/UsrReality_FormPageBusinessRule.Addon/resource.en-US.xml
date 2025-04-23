@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.689ea537-3fec-196c-f88e-9118896d7126.Caption" Value="Show elements: Comment" />
+			<Item Name="AddonConfig.Rules.bc485a80-9e3e-c6cd-936d-2595662a138d.Caption" Value="Make elements editable: Price, EUR" />
+			<Item Name="Caption" Value="Reality form page (Business rules)" />
+		</Items>
+	</Group>
+</Resources>
