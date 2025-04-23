@@ -4,6 +4,7 @@
     "Name": "UsrCalcAverageRealtyPriceProcess",
     "ModifiedOnUtc": "\/Date(1745343842000)\/",
     "ManagerName": "ProcessSchemaManager",
-    "Caption": "Calculate average realty price process"
+    "Caption": "Calculate average realty price process",
+    "DependsOn": []
   }
 }
