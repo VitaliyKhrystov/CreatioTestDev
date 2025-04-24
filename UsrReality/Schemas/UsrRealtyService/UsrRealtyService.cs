@@ -2,7 +2,7 @@ namespace Terrasoft.Configuration{    using System.ServiceModel;    using Sys
     public class RealtyService : BaseService, IReadOnlySessionState        //IReadOnlySessionState - для производительности (маркер для ISS)    {        [OperationContract]        [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.Wrapped,            RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]        public decimal GetMaxPriceByTypeId(string realtyTypeId, string realtyOfferTypeId)        {            if (string.IsNullOrEmpty(realtyTypeId) || string.IsNullOrEmpty(realtyOfferTypeId))            {                return -1;            }
             Select select = new Select(UserConnection)
                             .Column(Func.Max("UsrPrice"))
-                            .From("UsrRealty")
+                            .From("UsrReality")
                             .Where("UsrTypeId").IsEqual(Column.Parameter(new Guid(realtyTypeId)))
                             .And("UsrOfferTypeId").IsEqual(Column.Parameter(new Guid(realtyOfferTypeId)))
                             as Select;            decimal result = select.ExecuteScalar<decimal>();            return result;        }        [OperationContract]        [WebInvoke(Method = "GET", BodyStyle = WebMessageBodyStyle.Wrapped,            RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]        public string GetExample()        {            return "OK!";        }    }}
